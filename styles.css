@@ -6,31 +6,61 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-image: url("imgs/bgimg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 #top-navbar{
-  width: 95%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10vw, 15vw));
-  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-color: rgb(13, 13, 39);
+  justify-content: left;
   align-items: center;
-  padding-top: 15px;
-  gap: 2vw;
+  padding: 5px;
+  /* gap: 1vw; */
 }
-#top-navbar > button{
+.generic{
   background-color: rgba(240, 248, 255, 0);
   border-color: rgba(250, 235, 215, 0);
   padding: 1vw;
   font-size: 2vw;
   color: #f8f5b0;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #f6f280;
+  /* -webkit-text-stroke: 1px #f6f280; */
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   &:hover{
     background-color: rgba(10, 10, 10, 0.393);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-color: white;
   }
+}
+
+#category{
+  position: static;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0px;
+  border-style: none;
+  height: 2.7vw;
+  width: fit-content;
+}
+
+#searcher{
+  background-color: rgb(250, 194, 29);
+  border-style: none;
+  height: 2.7vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  &:hover{
+    background-color: rgb(236, 204, 110) ;
+  }
+}
+
+#top-navbar > textarea{
+  position: static;
+  resize: none;
+  width: 40vw;
+  height: 2.2vw;
+  border-style: none;
+  border-radius: 0%;
+  margin: 0px;
+
 }
