@@ -14,6 +14,7 @@ html, body {
   background-color: rgb(13, 13, 39);
   justify-content: left;
   align-items: center;
+  align-content: center;
   padding: 5px;
   /* gap: 1vw; */
 }
@@ -39,14 +40,15 @@ html, body {
   border-bottom-left-radius: 5px;
   margin: 0px;
   border-style: none;
-  height: 2.7vw;
+  padding: 1.15vw;
+  height: 2vw;
   width: fit-content;
 }
 
 #searcher{
-  background-color: rgb(250, 194, 29);
+  background-color: #fac21d;
   border-style: none;
-  height: 2.7vw;
+  height: 2vw;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   &:hover{
@@ -54,11 +56,10 @@ html, body {
   }
 }
 
-#top-navbar > textarea{
-  position: static;
+#searchbar{
   resize: none;
   width: 40vw;
-  height: 2.2vw;
+  height: 2vw;
   border-style: none;
   border-radius: 0%;
   margin: 0px;
